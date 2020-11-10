@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Project</title>
+<style>
+
+</style>
+<script>
+    /*
+    function F1(){
+        //console.log("mouse over created")
+        var obj=document.getElementById("t1");
+        obj.style.backgroundColor="red";
+        obj.style.color="blue";
+
+    }
+    function F2(){
+        //console.log("mouse out");
+        var obj=document.getElementById("t1");
+        obj.style.backgroundColor="yellow";
+        obj.style.color="black";
+    }
+  
+    function F1(){
+        var obj=document.getElementById("T1").value;
+        alert("your name is "+obj);
+    }
+      */
+      function F1(){
+          var uname=document.getElementById("uname").value;
+          var upwd=document.getElementById("upwd").value;
+          if(uname=="admin" && upwd=="admin"){
+              alert("login successfule");
+          }
+          else{
+              alert("invalid")
+          }
+      }
+</script>
+</head>
+<body>
+    <!--<div id='t1' onmouseover="F1()" >
+
+</div>
+<div>
+   <label for= "T1">Enter name:</label>
+<input type="text" name="T1" id="T1"/>
+<input type="button" onclick="F1()" id="B1" value="GetName"/>
+</div>
+  -->
+  <form>
+    <label for="uname"  >Enter user name:</label>
+    <input type="text" required placeholder= "enter name"  name="uname" id="uname"/>
+    <br>
+    <label for=upwd>Enter password</label>
+    <input type="password" name="upwd" id="upwd"/>
+     <br>
+     <input type="submit"  onclick="F1()" value="Login">
+  </form>
+
+</body>
+</html>
