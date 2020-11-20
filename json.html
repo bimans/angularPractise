@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        ///////nested data in json///////
+
+        // var employee=[
+        //     {name:'srikanth',salary:12000,skills:[{
+        //         course:"angular",exp:'5yrs'
+        //     }]
+
+        //     },
+        //     {
+        //         name:'rambu',salary:12000,skills:[{
+        //         course:"react",exp:'3yrs'
+        //     }]
+        //     }
+        // ]
+        // console.log(employee[0].skills[0]['course']);
+        // console.log(employee[1].skills[0].exp);//to find out second person exp
+
+        /////////////////function inside json///////////
+
+        // var employee={
+        //     name:"anuradha",
+        //     age:30,
+        //     greet:function(){
+        //         console.log('my name is:'+this.name);
+        //     }
+        // }
+        // console.log(employee.greet())
+
+        ///////////multiple line inside function in json//////
+        var employee = {
+            name: "anuradha",
+            age: 30,
+            greet: function (partofDay) {
+                if (partofDay === 'morning') {
+                    console.log("good morning to Mr." + this.name);
+                }
+                else if (partofDay === 'afternoon') {
+                    console.log("good afternoon to Mr." + this.name);
+                }
+                else {
+                    console.log("good night to Mr." + this.name);
+                }
+            }
+        }
+        console.log(employee.greet('afternoon'));
+
+
+
+
+    </script>
+</body>
+
+</html>

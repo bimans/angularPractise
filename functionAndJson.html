@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function GetData(){
+    var emps={name:"anu",age:4000,empNo:44,salary:444}
+            var obj=document.getElementById('div1');
+            var s= "";
+            s+="Emp name: "+emps.name+"<br>";
+            s+="Emp name: "+emps.salary+"<br>";
+            s+=emps.age+"<br>";
+            s+=emps.empNo+"<br>";
+            obj.innerHTML=s;
+}
+
+
+    </script>
+</head>
+
+
+<body>
+<button onclick="GetData()">Get Data</button>
+<div id="div1"></div>    
+</body>
+</html>

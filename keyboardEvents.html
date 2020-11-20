@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Keyboard Events</title>
+    <script>
+          function F1(){
+            var val=document.getElementById('T1').value;
+            var obj1=document.getElementById('first');
+            var obj2=document.getElementById('second');
+
+//innerText
+        obj1.innerText=val.toUpperCase();
+        obj2.innerText=val.toLowerCase();
+        
+//innerHTML
+             obj1.innerHTML="<u>"+val.toUpperCase()+"<u>";
+            obj2.innerHTML="<u>"+val.toLowerCase()+"<u>";
+
+
+//onkeypress event
+
+    }
+    </script>
+    
+</head>
+<body>
+    <div>
+        <label>Enter any data:</label>
+        <input type="text" onkeypress="F1()" id="T1" >
+        <br>
+        <h3 id="first"></h3>
+        <h3 id="second"></h3>
+    </div>
+</body>
+</html>
